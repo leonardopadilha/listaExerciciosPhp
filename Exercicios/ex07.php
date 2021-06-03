@@ -10,12 +10,12 @@
 <body>
     <div>
         <?php
-            $nota1 = 10;
-            $nota2 = 10;
-            $nota3 = 30;
+            $nota1 = 7;
+            $nota2 = 6;
+            $nota3 = 4;
 
-            $media = (($nota1 * 2) + ($nota2 * 3) + ($nota3 * 5) / ($nota1 + $nota2 + $nota3));
-            echo "A média das provas é: " . number_format($media, 2);
+            $media = (($nota1 * 2) + ($nota2 * 3) + ($nota3 * 5)) / ( 2 + 3 + 5);
+            echo "A média das provas é: $media";
         ?>
     </div>
 </body>
