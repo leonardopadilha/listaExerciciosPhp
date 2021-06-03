@@ -18,9 +18,9 @@
             $percentualLucro = $precoFabricaVeiculo * ($percentualLucroDistribuidor / 100);
             $custoConsumidor = $precoFabricaVeiculo + $percentualLucro + $valorImposto;
 
-            echo "Lucro do distribuidor: R$ " . number_format($percentualLucro, 2) . "<br/>"
-                                              . "Imposto: R$ " . number_format($valorImposto, 2) . "<br/>"
-                                              . "Total: R$ " . $custoConsumidor;
+            echo "Lucro do distribuidor: R$ " . number_format($percentualLucro, 2, ",",".") . "<br/>"
+                                              . "Imposto: R$ " . number_format($valorImposto, 2, ",",".") . "<br/>"
+                                              . "Total: R$ " . number_format($custoConsumidor, 2, ",",".");
         ?>
     </div>
 </body>
