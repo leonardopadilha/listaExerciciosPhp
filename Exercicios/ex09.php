@@ -13,8 +13,8 @@
             $salarioFuncionario = 800;
             $valorVenda = 1000;
             
-            $salarioTotalFuncionario = $salarioFuncionario + ($valorVenda * 0.15);
-            $comissao = $valorVenda * 0.15;
+            $comissao = $valorVenda * 0.15;  
+            $salarioTotalFuncionario = $salarioFuncionario + $comissao;
             
             echo "Valor da venda: R$ " . number_format($valorVenda, 2) . "<br/>"
                         . "Comissão: R$ " . number_format($comissao, 2) . "<br/>"
