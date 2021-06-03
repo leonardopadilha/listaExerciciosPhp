@@ -10,18 +10,21 @@
 <body>
     <div>
         <?php
-            $nomeColaborador;
-            $salarioFuncionario;
-            $tempoDeCasa;
+             $nomeColaborador;
+            $salarioFuncionario = 2000;
+            $tempoDeCasa = 7;
+			$calculaBonus = 0;
 
             if($tempoDeCasa >= 5){
-                $salarioFuncionario += ($salarioFuncionario * 0.15);
+				$calculaBonus += $salarioFuncionario * 0.20;
+                $salarioFuncionario += $calculaBonus;
             }else{
-                $salarioFuncionario += ($salarioFuncionario * 0.10);
+				$calculaBonus += $salarioFuncionario * 0.10;
+                $salarioFuncionario += $calculaBonus;
             }
 
-            echo "O novo salário do $nomeColaborador é R$ " 
-                                    . number_format($salarioFuncionario, 2);
+            echo "Valor do Bônus: R$ " . number_format($calculaBonus, 2, ",", ".") . "<br/>" 
+	                                   . "O novo salário do colaborador é R$ " . number_format($salarioFuncionario, 2, ",", ".");
         ?>
     </div>
 </body>
