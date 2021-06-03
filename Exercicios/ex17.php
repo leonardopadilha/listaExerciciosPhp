@@ -13,8 +13,8 @@
            function trocaNumero ($a, $b){
                $c = $a;
                $a = $b;
-               $b = $a;
-               return $c . " e " . $a;
+               $b = $c;
+               return $a . " e " . $b;
            }
 
            $numeros = trocaNumero(5, 7);
